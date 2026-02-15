@@ -1,0 +1,70 @@
+{
+  "name": "r-package-agent",
+  "owner": {
+    "name": "Ahmad Sofi-Mahmudi",
+    "email": "choxos@users.noreply.github.com",
+    "url": "https://github.com/choxos"
+  },
+  "metadata": {
+    "description": "Comprehensive R package development agent with 7 specialized agents, 6 workflow commands, and 12 methodology skills covering package creation, testing, documentation, pkgdown websites, and CRAN/Bioconductor submission",
+    "version": "1.0.0",
+    "license": "MIT"
+  },
+  "plugins": [
+    {
+      "name": "r-package-development",
+      "source": "./plugins/r-package-development",
+      "description": "Create, test, document, and release production-quality R packages with pkgdown websites and CI/CD pipelines",
+      "version": "1.0.0",
+      "category": "r-development",
+      "strict": false,
+      "agents": [
+        "./agents/package-architect.md",
+        "./agents/scaffold-engineer.md",
+        "./agents/code-engineer.md",
+        "./agents/test-engineer.md",
+        "./agents/docs-engineer.md",
+        "./agents/check-doctor.md",
+        "./agents/release-manager.md"
+      ],
+      "commands": [
+        "./commands/create-package.md",
+        "./commands/add-function.md",
+        "./commands/add-data.md",
+        "./commands/setup-website.md",
+        "./commands/run-check.md",
+        "./commands/prepare-release.md"
+      ],
+      "skills": [
+        "./skills/package-structure",
+        "./skills/r-code-patterns",
+        "./skills/roxygen2-documentation",
+        "./skills/testing-patterns",
+        "./skills/data-in-packages",
+        "./skills/dependencies",
+        "./skills/pkgdown-website",
+        "./skills/github-actions",
+        "./skills/cran-submission",
+        "./skills/bioconductor-submission",
+        "./skills/licensing",
+        "./skills/hex-logo"
+      ],
+      "keywords": [
+        "R",
+        "package",
+        "CRAN",
+        "Bioconductor",
+        "devtools",
+        "usethis",
+        "roxygen2",
+        "testthat",
+        "pkgdown",
+        "R-CMD-check",
+        "GitHub-Actions",
+        "hexSticker",
+        "vignettes",
+        "NAMESPACE"
+      ]
+    }
+  ]
+}
